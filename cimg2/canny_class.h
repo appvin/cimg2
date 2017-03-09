@@ -9,7 +9,9 @@ using namespace std;
 class canny_img
 {
 private:
-	CImg img;
+	CImg<float> img;
+
+
 
 public:
 
