@@ -139,14 +139,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="canny.h" />
+    <ClInclude Include="canny_class.h" />
     <ClInclude Include="CImg.h" />
     <ClInclude Include="gauss_filter.h" />
-    <ClInclude Include="non_maximum_suppression.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="canny.cc" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="stdafx.cpp" />
   </ItemGroup>
   <ItemGroup>

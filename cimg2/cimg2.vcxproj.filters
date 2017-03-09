@@ -21,13 +21,16 @@
     <ClInclude Include="gauss_filter.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="non_maximum_suppression.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="stdafx.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="canny.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="canny_class.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -35,7 +38,7 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="canny.cc">
+    <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
