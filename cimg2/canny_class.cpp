@@ -66,7 +66,7 @@ CImg<float> canny_img::gradient()
 			float grad_NE = (outSmooth(x + 1, y - 1) - outSmooth(x - 1, y + 1))*fct;
 			float grad_N = (outSmooth(x, y - 1) - outSmooth(x, y + 1))*0.5;
 			float grad_SE = (outSmooth(x + 1, y + 1) - outSmooth(x - 1, y - 1))*fct;
-																						/* compute gradient magnitude */
+			/* compute gradient magnitude */
 			float grad_mag = grad_E*grad_E + grad_N*grad_N;
 			outGradient(x, y) = grad_mag;
 
