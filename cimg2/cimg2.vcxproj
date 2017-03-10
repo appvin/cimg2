@@ -146,9 +146,6 @@
     <ClCompile Include="canny_class.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
-  <ItemGroup>
-    <Image Include="input.bmp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

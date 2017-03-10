@@ -25,7 +25,7 @@ private:
 	CImg<float> derivative[4];
 
 public:
-	canny_img(string infile, float sigma = 1.5f, float threshold = 2.0f);
+	canny_img(string infile, float sigma = 1.5f, float threshold = 3.0f);
 	void init_memory();
 	CImg<float> gray();//灰度处理
 	CImg<float> CannyDiscrete();//canny算法

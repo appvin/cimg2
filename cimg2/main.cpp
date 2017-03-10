@@ -9,8 +9,7 @@ int main()
 	for (int i = 0; i < 4; i++)
 	{
 		canny_img tmp("test_data\\"+file[i] + ".bmp");
-		//tmp.CannyDiscrete().display("i");
-		tmp.CannyDiscrete();
+		tmp.CannyDiscrete().display("i");
 		tmp.img_save("result\\" + file[i] + "\\");
 	}
 
