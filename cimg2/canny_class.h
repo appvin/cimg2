@@ -19,10 +19,15 @@ private:
 	int widthIn, heightIn;
 	float sigma = 1.5f;
 	float threshold = 7.0f;
+	CImg<int> dirmax;
+	CImg<float> derivative[4];
 
 public:
 	canny_img(string infile);
+	void init_memory();
 	CImg<float> to_gray();
 	CImg<float> CannyDiscrete();
 	CImg<float> gauss_filter(CImg<float>& filter, int deriv = 0);
+	CImg<float> gradient();
+	CImg<float> thres_nms();
 };

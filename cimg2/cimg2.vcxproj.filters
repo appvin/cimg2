@@ -18,9 +18,6 @@
     <ClInclude Include="CImg.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="canny.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="canny_class.h">
       <Filter>头文件</Filter>
     </ClInclude>

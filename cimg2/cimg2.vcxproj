@@ -139,7 +139,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="canny.h" />
     <ClInclude Include="canny_class.h" />
     <ClInclude Include="CImg.h" />
   </ItemGroup>
