@@ -1,7 +1,9 @@
 #pragma once
 
-#include <iostream>
 #include "CImg.h"
+#include <iostream>
+#include <string>
+#include <cmath>
 
 using namespace cimg_library;
 using namespace std;
@@ -17,17 +19,18 @@ private:
 	CImg<float> outNMS;//non-max-supression
 	CImg<float> outThreshold;//阈值处理后图像
 	int widthIn, heightIn;
-	float sigma = 1.5f;
-	float threshold = 7.0f;
+	float sigma;
+	float threshold;
 	CImg<int> dirmax;
 	CImg<float> derivative[4];
 
 public:
-	canny_img(string infile);
+	canny_img(string infile, float sigma = 1.5f, float threshold = 2.0f);
 	void init_memory();
-	CImg<float> to_gray();//灰度处理
+	CImg<float> gray();//灰度处理
 	CImg<float> CannyDiscrete();//canny算法
 	CImg<float> gauss_filter(CImg<float>& filter, int deriv = 0);//高斯滤波
 	CImg<float> gradient();//梯度计算
 	CImg<float> thres_nms();//阈值与non-max-supression处理
+	void img_save(string path);
 };
